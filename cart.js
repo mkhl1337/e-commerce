@@ -142,7 +142,9 @@ divRecapCmd.appendChild(btnAnn);
         confirmBtn.addEventListener('click', () => {
             alert("Commande validée ! ✅ ");
             hideModal();
-            document.querySelector('section').textContent=`Vous n'avez de produit dans votre panier !📙`;
+            document.querySelector('section').style='width: 100%; text-align: center; margin: 0 auto; padding: 20px; box-sizing: border-box;';
+            document.querySelector('section').innerHTML=`<h1>Vous n'avez de produit dans votre panier !📙</h1>
+            <h2> Vous souhaitez recommander ou revoir notre boutique cliquer <a href='index.html'> ICI </a> </h2>`;
             localStorage.removeItem('panier');
           
         });
@@ -236,7 +238,9 @@ divRecapCmd.appendChild(btnAnn);
     confirmBtn.addEventListener('click', () => {
         alert("Commande annule ! ✅ ");
         hideModal();
-        document.querySelector('section').textContent=`Vous n'avez de produit dans votre panier !📙`;
+        document.querySelector('section').style='width: 100%; text-align: center; margin: 0 auto; padding: 20px; box-sizing: border-box;';
+        document.querySelector('section').innerHTML=`<h1>Vous n'avez de produit dans votre panier !📙</h1>
+        <h2> Vous souhaitez recommander ou revoir notre boutique cliquer <a href='index.html'> ICI </a> </h2>`;
         localStorage.removeItem('panier');
       
     });
